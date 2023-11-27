@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/add-to-project@v0.5.0
+        env:
+          github-token: ${{ secrets.PROJECT_AUTOMATION_PERSONAL_TOKEN_HH }}        
         with:
-          project-url: https://github.com/users/wverastegui/projects/2
-          github-token: ${{ secrets.PROJECT_AUTOMATION_PERSONAL_TOKEN_HH }}
+          project-url: https://github.com/users/wverastegui/projects/2          
